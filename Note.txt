@@ -1,0 +1,18 @@
+Newprinthub.com — UI/UX Designer
+May 2024 – Present
+
+Improved customer retention by 25% (60% → 85% at the 3-month mark, tracked via Amplitude) by redesigning the client onboarding flow — simplifying 7 steps into 3 and eliminating the drop-off point identified through Qualtrics session feedback.
+Increased app user retention by 20% over two quarters by auditing and consolidating fragmented UI components into a unified design system, reducing navigation depth from 4 levels to 2 across core user journeys.
+Partnered with the engineering team to ship an accessible, WCAG 2.1-compliant component library in Figma, cutting handoff revision cycles by 30% and enabling faster end-to-end product delivery.
+
+
+Inrowmek.com — UI/UX Developer
+Oct 2023 – April 2024
+
+Reduced design-to-development friction across 3 mobile and web products by building a structured design system in Figma and Sketch — standardizing spacing, typography, and interaction states used by the full team.
+Contributed to end-to-end product ownership by documenting component guidelines and user flows, enabling new team members to onboard to the design process 40% faster.
+Supported cross-functional collaboration between design and marketing by producing brand-consistent UI assets and social graphics in Illustrator, maintaining visual coherence across 5+ touchpoints.
+
+
+
+UI/UX Designer & Developer with 2+ years building design systems, accessible interfaces, and full-stack prototypes in Figma, React, and Tailwind. Proven 20–25% retention lifts across onboarding and navigation redesigns.

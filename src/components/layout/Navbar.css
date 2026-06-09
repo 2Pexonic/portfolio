@@ -1,0 +1,31 @@
+@reference "../../index.css";
+
+@layer components {
+  .navbar-fixed {
+    @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-6 md:px-12;
+  }
+
+  .navbar-scrolled {
+    @apply bg-white/80 backdrop-blur-md py-4 shadow-sm;
+  }
+
+  .navbar-transparent {
+    @apply bg-transparent;
+  }
+
+  .navbar-container {
+    @apply max-w-7xl mx-auto flex items-center justify-between;
+  }
+
+  .navbar-logo {
+    @apply text-xl font-bold tracking-tighter cursor-pointer;
+  }
+
+  .navbar-links {
+    @apply hidden md:flex items-center gap-10 text-sm font-medium tracking-wide;
+  }
+
+  .mobile-menu-card {
+    @apply bg-white/95 backdrop-blur-xl w-full rounded-[32px] shadow-2xl flex flex-col p-8 border border-black/5 pointer-events-auto max-w-[400px] mx-auto;
+  }
+}
