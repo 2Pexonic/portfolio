@@ -20,11 +20,11 @@ export const Hero = () => {
             Pune, India / Remote
           </span>
         </div>
-        
+
         <h1 className="text-editorial text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] leading-[1.2] md:leading-[1.15] tracking-[-0.02em] mb-12 max-w-6xl">
-          I'm Ashwin, a <span className="text-brand-muted/40 italic font-serif">product designer</span> & <span className="text-brand-muted/40 italic font-serif">developer</span> building AI-agentic interfaces and scalable design systems.
+          I'm Ashwin, a <span className="text-brand-muted/40 italic font-serif">UI/UX designer</span> & <span className="text-brand-muted/40 italic font-serif">developer</span> building AI-agentic interfaces and scalable design systems.
         </h1>
-        
+
         <div className="role-label-container">
           <span className="role-label-item">Final Year BCA @ Tilak Maharashtra Vidyapeeth</span>
           <span className="hidden md:block text-brand-text/20">•</span>

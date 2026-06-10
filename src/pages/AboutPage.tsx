@@ -6,14 +6,14 @@ const experiences: PreviousWork[] = [
   {
     role: "UI/UX Designer",
     company: "Newprinthub.com",
-    period: "May 2024 - Present",
-    description: "Focused on increasing customer retention through onboarding redesigns and UI streamlining."
+    period: "May 2024 – Present",
+    description: "Increased customer retention by 25% by redesigning the onboarding flow through design thinking and usability testing. Accelerated product launch by 30% by building a scalable Figma component library that enabled seamless cross-functional collaboration between design and engineering teams."
   },
   {
     role: "UI/UX Developer",
     company: "Inrowmek.com",
-    period: "Oct 2023 - April 2024",
-    description: "Developed design documentation and intuitive interfaces for mobile and web using Sketch and Figma."
+    period: "Oct 2023 – April 2024",
+    description: "Reduced design-to-development handoff time by 40% by authoring comprehensive design documentation and a reusable Figma design system. Designed WCAG-compliant, responsive UI components for mobile and web, and supported a 15% uplift in campaign engagement through A/B-tested marketing assets."
   }
 ];
 
@@ -21,37 +21,37 @@ const education: Education[] = [
   {
     degree: "Bachelor of Computer Applications (BCA)",
     school: "Tilak Maharashtra Vidyapeeth",
-    period: "Aug 2022 - June 2026",
-    details: ["Computer Fundamentals", "Operating System & Networking", "Business Application Models", "Database Management System"]
+    period: "Aug 2022 – Expected June 2026",
+    details: ["Computer Fundamentals", "Operating Systems & Networking", "Database Management Systems", "Business Application Models"]
   },
   {
-    degree: "Higher Secondary Certificate",
+    degree: "Higher Secondary Certificate (IT)",
     school: "ASM (CSIT) College",
-    period: "Aug 2021 - March 2022",
-    details: ["Information Technology", "Planning & Organisation Management", "Business Models", "Enterprise Resource System"]
+    period: "Aug 2021 – March 2022",
+    details: ["Information Technology", "Planning & Organisation Management", "Business Models", "Enterprise Resource Systems"]
   }
 ];
 
 const skillCategories: SkillCategory[] = [
   {
-    title: "Skills",
-    skills: ["User Research", "Interaction Design", "User Interface Design", "Wireframing", "Prototyping", "Design with AI", "Design Systems", "Information Architecture"]
+    title: "Design & UX",
+    skills: ["User Research", "Design Thinking", "User Journey Mapping", "Heuristic Evaluation", "Interaction Design", "Usability Testing", "A/B Testing", "Design Systems", "Component Library", "Information Architecture", "Responsive Design", "Accessibility (WCAG)", "End-to-End Design"]
   },
   {
     title: "Research & Analytics",
-    skills: ["Amplitude", "Qualtrics", "User Testing", "Perplexity", "Claude"]
+    skills: ["Amplitude", "Qualtrics", "UserTesting", "Perplexity"]
   },
   {
     title: "Design Tools",
-    skills: ["Adobe Illustrator", "Figma", "Sketch", "Magicpath"]
+    skills: ["Figma", "Adobe Illustrator", "Sketch", "Magicpath"]
   },
   {
-    title: "AI Prototyping",
-    skills: ["Lovable", "Figma AI", "Miro"]
+    title: "AI & Prototyping",
+    skills: ["Lovable", "Figma AI (Make)", "Miro", "Claude", "Perplexity"]
   },
   {
     title: "Development",
-    skills: ["HTML", "Tailwind CSS", "ReactJS", "JavaScript", "GitHub", "Antigravity AI IDE"]
+    skills: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io", "Tailwind CSS", "JavaScript", "HTML", "GitHub"]
   }
 ];
 
@@ -82,18 +82,18 @@ export const AboutPage = () => (
         >
           <h1 className="text-editorial text-5xl md:text-7xl mb-12">Bridging the gap between pixels and production.</h1>
           <p className="text-xl md:text-2xl text-brand-muted leading-relaxed max-w-3xl">
-            I'm Ashwinkumar Chavan. I don't just design interfaces; I build them. As a product designer with a background in computer applications, I believe the best experiences are born when the designer understands the code and the developer understands the user.
+            I'm Ashwinkumar Chavan — a UI/UX Designer and Developer with 2+ years of experience delivering end-to-end digital products across mobile and web. I specialise in the space where design thinking meets engineering: taking products from user research and journey mapping through to production-ready interfaces built in React and Tailwind CSS.
           </p>
           <p className="text-xl md:text-2xl text-brand-muted leading-relaxed max-w-3xl mt-8">
-            My mission is to create <span className="text-brand-text font-medium italic">human-centric AI tools</span> that solve real problems, not just follow trends. Whether it's redesigning enterprise systems for PrintHub or building collaborative platforms, I focus on measurable impact and technical feasibility.
+            Whether it's increasing retention by <span className="text-brand-text font-medium italic">25% at PrintHub</span> through usability testing and onboarding redesign, or architecting a full-stack collaborative platform like Teamera.net, I focus on <span className="text-brand-text font-medium italic">measurable impact</span> — not just beautiful pixels. Available for full-time and contract roles.
           </p>
 
           <div className="mt-12 flex flex-wrap gap-8">
             <div>
-              <span className="text-[10px] font-bold tracking-[0.2em] text-brand-muted uppercase block mb-2">Social Proof</span>
+              <span className="text-[10px] font-bold tracking-[0.2em] text-brand-muted uppercase block mb-2">What people say</span>
               <p className="text-sm font-medium leading-relaxed max-w-sm italic text-brand-text/70">
-                "Ashwin's ability to bridge design and code helped us launch PrintHub 30% faster than expected. His eye for detail is unmatched."
-                <span className="block mt-2 font-bold not-italic text-brand-text text-[10px]">— Product Lead @ Newprinthub</span>
+                "Ashwin's ability to bridge design and engineering helped us launch PrintHub 30% faster than planned. His focus on measurable outcomes and cross-functional collaboration is rare at this level."
+                <span className="block mt-2 font-bold not-italic text-brand-text text-[10px]">— Product Lead, Newprinthub.com</span>
               </p>
             </div>
           </div>
