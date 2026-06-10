@@ -35,7 +35,7 @@ const education: Education[] = [
 const skillCategories: SkillCategory[] = [
   {
     title: "Design & UX",
-    skills: ["User Research", "Design Thinking", "User Journey Mapping",  "Interaction Design", "Usability Testing", "A/B Testing", "Design Systems", "Component Library", "Information Architecture", "Accessibility (WCAG)", "End-to-End Design"]
+    skills: ["User Research", "Design Thinking", "User Journey Mapping",  "Interaction Design", "Usability Testing", "A/B Testing", "Design with AI", "Design Systems",  "Information Architecture", "Accessibility (WCAG)", "End-to-End Design"  ]
   },
   {
     title: "Research & Analytics",
