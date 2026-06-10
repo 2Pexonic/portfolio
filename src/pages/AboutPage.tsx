@@ -51,7 +51,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: "Development",
-    skills: ["React.js", "Tailwind CSS", "JavaScript", "HTML", "GitHub"]
+    skills: ["React.js", "JavaScript", "Tailwind CSS", "HTML", "GitHub"]
   }
 ];
 
