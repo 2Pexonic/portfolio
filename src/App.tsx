@@ -19,14 +19,14 @@ export const projects: Project[] = [
     timeline: "May 2024 - Present",
     category: "Mobile Application",
     role: "UI/UX Designer",
-    overview: "PrintHub is a mobile-first printing platform redesigned from the ground up to simplify the end-to-end printing journey for customers across India. By applying design thinking and rigorous usability testing, the app went from a friction-heavy experience to an intuitive, conversion-optimised product — accelerating the launch by 30% and lifting customer retention by 25%.",
-    problem: "PrintHub's existing app suffered from complex user flows, an inconsistent visual identity, and high drop-off rates. Users abandoned orders mid-flow, leading to lost revenue and poor customer satisfaction scores.",
-    solution: "A fully redesigned mobile application built on a scalable Figma component library and design system. Every screen was informed by user journey mapping, heuristic evaluation, and A/B testing of key interactions to ensure measurable usability improvements.",
-    impact: "Increased customer retention by 25%, accelerated product launch by 30% through cross-functional collaboration with engineering, and established a consistent, accessible design system across all mobile touchpoints.",
+    overview: "PrintHub is a mobile-first printing platform designed to simplify the printing process for customers across India. The application enables users to upload documents, customize print options, place orders, and track deliveries through an intuitive and user-friendly interface.",
+    problem: "PrintHub's existing mobile application suffered from complex user flows, an outdated interface, and high customer drop-off rates. Users found it difficult to navigate the printing process, leading to frustration and lower sales conversions.",
+    solution: "A fully redesigned mobile application built on a scalable Figma component library and design system. Every screen was informed by user journey mapping, and A/B testing of key interactions to ensure measurable usability improvements.",
+    impact: "Significantly improved customer engagement, faster task completion, and established a consistent brand identity across all mobile touchpoints.",
     bullets: [
-      "Increased customer retention by 25% — measured by monthly active user data — by redesigning the onboarding flow using design thinking and iterative usability testing across 3 user cohorts.",
-      "Accelerated product launch by 30% faster than estimated — measured by sprint velocity — by building a scalable component library in Figma that streamlined cross-functional collaboration between design and engineering.",
-      "Improved end-to-end task completion by mapping user journeys, identifying 6 critical drop-off points, and redesigning navigation paths for faster, more accessible interactions."
+      "Simplified the printing journey from document upload to delivery tracking.",
+      "Established a modern design system using Poppins and a custom color palette.",
+      "Optimized the mobile experience for faster navigation and better accessibility."
     ],
     link: "#",
     figmaLink: "https://www.figma.com/community/file/1439181928064589138/redesign-printhub",
@@ -39,52 +39,51 @@ export const projects: Project[] = [
     timeline: "2025 - 2026",
     category: "Full-Stack Application",
     role: "Full-Stack Designer & Developer",
-    overview: "Teamera.net is a full-stack web application that bridges the gap between innovative ideas and skilled collaborators. Designed and architected end-to-end — from user research and information architecture through to production deployment — it enables founders, students, and professionals to form startup teams, manage projects, and collaborate in real time.",
+    overview: "Teamera.net is a full-stack web application designed to help founders, students, and professionals build startup teams and collaborate on projects. The platform bridges the gap between innovative ideas and skilled team members.",
     problem: "Founders and innovators consistently struggle to find the right teammates. Existing platforms focus on hiring or passive networking, but offer no dedicated tools for startup team formation, role-based applications, or real-time project collaboration.",
-    solution: "A dedicated platform where users discover startup projects, apply for roles, build portfolios, and collaborate through shared workspaces — all backed by secure JWT authentication and real-time Socket.io communication on a scalable 3-tier architecture.",
-    impact: "Delivered a complete startup team-building ecosystem with real-time collaboration, secure authentication, and a scalable architecture — reducing team formation friction and enabling project-based networking at scale.",
+    solution: "A dedicated platform where users can discover startup projects, apply for roles, build professional portfolios, and collaborate through shared workspaces.",
+    impact: "Built a complete startup team-building ecosystem, implemented secure authentication, and developed real-time collaboration features using a scalable 3-tier architecture.",
     bullets: [
-      "Architected a scalable 3-tier system using React, Node.js, and MongoDB Atlas — enabling real-time team collaboration via Socket.io for a growing community of founders and professionals.",
-      "Reduced onboarding friction by designing end-to-end user journeys — from registration to workspace collaboration — validated through usability testing and stakeholder feedback sessions.",
-      "Improved platform security and session reliability by implementing JWT-based authentication, protected routes, and server-sent events — measured by zero reported auth failures post-launch."
+      "Architected the 3-tier system using React, Node.js, and MongoDB Atlas.",
+      "Designed full user lifecycles from registration to workspace collaboration.",
+      "Implemented secure JWT authentication and real-time Socket.io communication."
     ],
     link: "https://teamera.vercel.app/",
     thumbnailImage: "/src/assets/Teamera/Teamera.png",
     heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2000",
     targetUsers: [
-      { title: "Founders", points: ["Post project ideas and recruit team members.", "Manage applications and build startup teams.", "Track project milestones in a shared workspace."] },
-      { title: "Students", points: ["Gain real industry experience on live projects.", "Build a strong, portfolio-worthy track record.", "Collaborate with professionals across disciplines."] },
-      { title: "Professionals", points: ["Discover meaningful side projects.", "Contribute specialised skills to early-stage startups.", "Network with ambitious, talented collaborators."] },
-      { title: "Community", points: ["Share knowledge and engage in discussions.", "Build professional connections.", "Participate in a growing startup ecosystem."] }
+      { title: "Founders", points: ["Post project ideas.", "Recruit team members.", "Manage applications and teams."] },
+      { title: "Students", points: ["Gain practical industry experience.", "Work on real projects.", "Build strong portfolios."] },
+      { title: "Professionals", points: ["Find side projects.", "Network with talented individuals.", "Contribute specialized skills."] },
+      { title: "Community", points: ["Share knowledge.", "Engage in discussions.", "Build professional connections."] }
     ],
     coreFeatures: [
-      { title: "Secure Authentication", points: ["JWT-based registration and login.", "Protected routes and session management.", "Role-based access control."] },
-      { title: "User Profiles", points: ["Professional profile with skill management.", "Portfolio showcase and resume support.", "Work history and contribution tracking."] },
-      { title: "Project Management", points: ["Create, publish, and discover projects.", "Advanced filtering by role, skill, and stage.", "Milestone and task tracking."] },
-      { title: "Application System", points: ["Apply for specific project roles.", "Track application status in real time.", "Accept, reject, or invite candidates."] },
-      { title: "Team Workspace", points: ["Real-time collaboration via Socket.io.", "Task management and file sharing.", "Team communication and notifications."] },
-      { title: "Community Platform", points: ["Discussion posts and peer interactions.", "Cross-functional networking opportunities.", "Startup knowledge sharing hub."] }
+      { title: "User Authentication", points: ["Secure registration and login.", "JWT-based authentication.", "Protected routes and session management."] },
+      { title: "User Profiles", points: ["Professional profile creation.", "Skill management.", "Portfolio showcase and resume support."] },
+      { title: "Project Management", points: ["Create and publish projects.", "Project discovery and browsing.", "Advanced filtering options."] },
+      { title: "Application System", points: ["Apply for project roles.", "Track application status.", "Accept, reject, or invite candidates."] },
+      { title: "Team Workspace", points: ["Real-time team collaboration.", "Task management.", "File sharing and team communication."] },
+      { title: "Community Platform", points: ["Community discussions.", "Posts and interactions.", "Networking opportunities."] }
     ],
-    workflow: ["Registration & Profile Setup", "Browse Projects & Community", "Apply for Roles", "Founder Review & Selection", "Team Formation", "Collaborative Workspace"],
+    workflow: ["Registration & Profile Completion", "Browse Projects & Community", "Apply for Roles", "Founder Review", "Team Formation", "Collaborative Workspace"],
     techStack: [
-      { category: "Frontend", details: "React.js, Vite, Responsive SPA, Tailwind CSS" },
+      { category: "Frontend", details: "React.js, Vite, Responsive SPA" },
       { category: "Backend", details: "Node.js, Express.js, REST API" },
       { category: "Database", details: "MongoDB Atlas, Mongoose ODM" },
-      { category: "Real-Time", details: "Socket.io, SSE (Server-Sent Events)" },
-      { category: "Auth", details: "JWT Authentication, Protected Routes" }
+      { category: "Real-Time", details: "Socket.io, SSE (Server-Sent Events)" }
     ],
     architecture: [
-      { layer: "Presentation", details: "React + Vite — Responsive, Accessible Frontend" },
-      { layer: "Business Logic", details: "Node.js + Express, REST APIs, JWT Auth" },
+      { layer: "Presentation", details: "React + Vite Frontend" },
+      { layer: "Business Logic", details: "Node.js + Express, REST APIs, JWT" },
       { layer: "Data Layer", details: "MongoDB Atlas, Mongoose Schemas" }
     ],
     achievements: [
-      "Delivered a complete end-to-end startup team-building ecosystem.",
-      "Implemented secure JWT authentication and role-based access control.",
-      "Built real-time collaboration with Socket.io and Server-Sent Events.",
-      "Architected a scalable 3-tier full-stack system.",
-      "Designed full user lifecycles validated through usability testing.",
-      "Enabled project-based networking and cross-functional team formation."
+      "Built a complete startup team-building ecosystem.",
+      "Implemented secure authentication and authorization.",
+      "Developed real-time collaboration features.",
+      "Created a scalable full-stack architecture.",
+      "Enabled project-based networking and team formation.",
+      "Integrated community engagement and collaboration tools."
     ]
   },
   {
@@ -93,14 +92,14 @@ export const projects: Project[] = [
     timeline: "2023",
     category: "Web Design & Development",
     role: "UI/UX Designer & Frontend Developer",
-    overview: "Walkeels is a modern, responsive business website designed to establish a strong digital presence through clear information architecture, mobile-first responsive design, and a conversion-focused user experience. The project spanned from stakeholder brief to live deployment.",
-    problem: "The client needed a professional online presence to improve brand visibility, communicate services clearly, and generate leads — all optimised for a seamless multi-device browsing experience.",
-    solution: "A responsive one-page website built with mobile-first principles, strategic content hierarchy, WCAG-informed accessibility, and a consistent visual design system — communicating the brand's services and values with clarity and impact.",
-    impact: "Delivered a stronger, more professional digital presence, improved cross-device user engagement, and a conversion-focused layout aligned with the client's business goals.",
+    overview: "Walkeels is a modern business website designed to establish a strong digital presence through a clean, responsive, and user-focused interface. The project focused on creating an engaging user experience and clear information architecture.",
+    problem: "The client required a professional online presence to improve brand visibility, present services clearly, increase engagement, and generate potential leads through a seamless multi-device browsing experience.",
+    solution: "A modern one-page website designed with intuitive navigation, strategic content placement, and responsive layouts that effectively communicates the brand's services and values.",
+    impact: "Improved user experience, stronger brand presentation, faster and more engaging browsing experience, and a professional digital presence aligned with business goals.",
     bullets: [
-      "Improved brand digital presence and cross-device user engagement by designing and developing a mobile-first, WCAG-informed responsive website with strategic information architecture and conversion-focused layout.",
-      "Reduced perceived page complexity by 40% — validated through stakeholder review — by applying a clean visual system with consistent typography, spacing, and reusable component patterns.",
-      "Delivered the full project — from stakeholder brief and wireframing through to live deployment — within a 3-week timeline through efficient end-to-end design and development workflow."
+      "Developed a high-performance one-page business website with a focus on conversion.",
+      "Established a modern visual system with consistent typography, colors, and components.",
+      "Implemented mobile-first responsive design ensuring accessibility across all devices."
     ],
     thumbnailImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
     heroImage: "https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&q=80&w=2000",
