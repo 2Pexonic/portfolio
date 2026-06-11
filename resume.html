@@ -1,433 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashwinkumar Chavan — Resume</title>
-  <style>
-    /* ── Reset & Base ── */
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-    body {
-      font-family: 'Inter', 'Calibri', Arial, sans-serif;
-      font-size: 9.8pt;
-      line-height: 1.38;
-      color: #111;
-      background: #fff;
-    }
-
-    /* ── Page Layout ── */
-    .page {
-      width: 8.5in;
-      min-height: 11in;
-      margin: 0 auto;
-      padding: 0.45in 0.52in 0.4in 0.52in;
-    }
-
-    /* ── Header ── */
-    header {
-      border-bottom: 2px solid #1a1a1a;
-      padding-bottom: 7px;
-      margin-bottom: 9px;
-    }
-
-    .name {
-      font-size: 22pt;
-      font-weight: 700;
-      letter-spacing: -0.3px;
-      color: #0d0d0d;
-      line-height: 1.1;
-    }
-
-    .tagline {
-      font-size: 9.5pt;
-      font-weight: 500;
-      color: #444;
-      margin-top: 2px;
-      letter-spacing: 0.1px;
-    }
-
-    .contact {
-      margin-top: 5px;
-      font-size: 8.8pt;
-      color: #333;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0 14px;
-    }
-
-    .contact a {
-      color: #1a56db;
-      text-decoration: none;
-    }
-
-    /* ── Section ── */
-    section {
-      margin-top: 9px;
-    }
-
-    .section-title {
-      font-size: 8pt;
-      font-weight: 700;
-      letter-spacing: 1.3px;
-      text-transform: uppercase;
-      color: #0d0d0d;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 2px;
-      margin-bottom: 6px;
-    }
-
-    /* ── Summary ── */
-    .summary p {
-      font-size: 9.5pt;
-      color: #222;
-      line-height: 1.45;
-    }
-
-    /* ── Experience ── */
-    .job {
-      margin-bottom: 8px;
-    }
-
-    .job:last-child {
-      margin-bottom: 0;
-    }
-
-    .job-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-
-    .job-title {
-      font-size: 9.8pt;
-      font-weight: 700;
-      color: #0d0d0d;
-    }
-
-    .job-company {
-      font-size: 9.8pt;
-      font-weight: 500;
-      color: #222;
-    }
-
-    .job-date {
-      font-size: 8.8pt;
-      color: #555;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .job ul {
-      margin-top: 3px;
-      padding-left: 14px;
-    }
-
-    .job ul li {
-      font-size: 9.3pt;
-      color: #222;
-      margin-bottom: 2.5px;
-      line-height: 1.38;
-    }
-
-    /* ── Skills ── */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 4px 12px;
-    }
-
-    .skill-group-label {
-      font-size: 8.5pt;
-      font-weight: 700;
-      color: #0d0d0d;
-      margin-bottom: 1px;
-    }
-
-    .skill-list {
-      font-size: 9pt;
-      color: #333;
-      line-height: 1.5;
-    }
-
-    /* ── Projects ── */
-    .project {
-      margin-bottom: 7px;
-    }
-
-    .project:last-child {
-      margin-bottom: 0;
-    }
-
-    .project-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-
-    .project-title {
-      font-size: 9.8pt;
-      font-weight: 700;
-      color: #0d0d0d;
-    }
-
-    .project-link {
-      font-size: 8.6pt;
-      color: #1a56db;
-      text-decoration: none;
-    }
-
-    .project-desc {
-      font-size: 9.2pt;
-      color: #222;
-      margin-top: 2px;
-      line-height: 1.4;
-    }
-
-    .project-stack {
-      font-size: 8.6pt;
-      color: #555;
-      margin-top: 1.5px;
-    }
-
-    .project-stack span {
-      font-weight: 600;
-      color: #333;
-    }
-
-    /* ── Education ── */
-    .edu-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 3px;
-    }
-
-    .edu-degree {
-      font-size: 9.5pt;
-      font-weight: 600;
-      color: #0d0d0d;
-    }
-
-    .edu-school {
-      font-size: 9pt;
-      color: #444;
-      margin-left: 4px;
-    }
-
-    .edu-date {
-      font-size: 8.8pt;
-      color: #555;
-      white-space: nowrap;
-    }
-
-    /* ── Print ── */
-    @media print {
-      body {
-        background: #fff;
-      }
-
-      .page {
-        margin: 0;
-        padding: 0.4in 0.5in 0.35in 0.5in;
-        width: 100%;
-      }
-
-      a {
-        color: #1a56db !important;
-      }
-    }
-
-    @page {
-      size: letter;
-      margin: 0;
-    }
-  </style>
+<meta charset="UTF-8" />
+<title>Ashwinkumar Chavan - Resume</title>
+<style>
+  @page { size: Letter; margin: 0.5in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; color: #000; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.25pt;
+    line-height: 1.32;
+    -webkit-print-color-adjust: exact;
+  }
+  h1 {
+    font-size: 19pt;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5pt;
+    margin-bottom: 2pt;
+  }
+  .role {
+    font-size: 11pt;
+    text-align: center;
+    margin-bottom: 4pt;
+  }
+  .contact {
+    font-size: 9.75pt;
+    text-align: center;
+    margin-bottom: 9pt;
+  }
+  h2 {
+    font-size: 11pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6pt;
+    border-bottom: 1px solid #000;
+    margin-top: 8pt;
+    margin-bottom: 4pt;
+  }
+  p { margin-bottom: 0; }
+  .summary { text-align: justify; }
+  .skills-line { margin-bottom: 1.5pt; }
+  .skills-line .label { font-weight: 700; }
+  .job, .project { margin-bottom: 6pt; }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 700;
+  }
+  .meta { font-style: italic; font-weight: 400; font-size: 9.75pt; margin-bottom: 2pt; }
+  ul { list-style: none; padding-left: 0; }
+  li {
+    padding-left: 11pt;
+    text-indent: -11pt;
+    margin-bottom: 1.4pt;
+  }
+  li::before { content: "\2022"; margin-right: 5pt; }
+  .edu { margin-bottom: 4pt; }
+</style>
 </head>
-
 <body>
-  <div class="page">
-
-    <!-- ── HEADER ── -->
-    <header>
-      <div class="name">Ashwinkumar Chavan</div>
-      <div class="tagline">UI/UX Designer & Developer</div>
-      <div class="contact">
-        <span>Pune, India</span>
-        <a href="mailto:ashwinkumarchavan13@gmail.com">ashwinkumarchavan13@gmail.com</a>
-        <span>+91 8180994970</span>
-        <a href="https://linkedin.com/in/ashwinchavan" target="_blank">LinkedIn</a>
-        <a href="https://teamera.vercel.app" target="_blank">Portfolio</a>
-      </div>
-    </header>
-
-    <!-- ── PROFESSIONAL SUMMARY ── -->
-    <section class="summary">
-      <div class="section-title">Professional Summary</div>
-      <p>
-        Designer who ships. 2+ years turning messy user problems into products that actually work — lifted retention 25%
-        at PrintHub, built Teamera.net from zero to full-stack. Specialized in bridging the gap between design and
-        engineering: Figma systems to production React. BCA expected June 2026. Available for full-time and contract
-        roles.
-      </p>
-    </section>
-
-    <!-- ── WORK EXPERIENCE ── -->
-    <section>
-      <div class="section-title">Work Experience</div>
-
-      <div class="job">
-        <div class="job-header">
-          <div>
-            <span class="job-company">Newprinthub.com</span>
-            &nbsp;·&nbsp;
-            <span class="job-title">UI/UX Designer</span>
-          </div>
-          <div class="job-date">May 2024 – Present</div>
-        </div>
-        <ul>
-          <li>Increased customer retention by <strong>25%</strong> by applying design thinking and iterative usability
-            testing to redesign the onboarding flow, cutting completion steps from 7 to 4.</li>
-          <li>Improved app user retention by <strong>20%</strong> by mapping end-to-end user journeys, surfacing 6
-            critical drop-off points, and rebuilding navigation around real user mental models.</li>
-          <li>Shipped <strong>30% faster</strong> than sprint estimates by building a scalable Figma component library
-            that eliminated design-to-engineering back-and-forth entirely.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-header">
-          <div>
-            <span class="job-company">Inrowmek.com</span>
-            &nbsp;·&nbsp;
-            <span class="job-title">UI/UX Developer</span>
-          </div>
-          <div class="job-date">Oct 2023 – Apr 2024</div>
-        </div>
-        <ul>
-          <li>Cut design-to-dev handoff time by <strong>40%</strong> by building a single-source Figma design system
-            with documented tokens, component specs, and interaction annotations — adopted by 3 squads within 2 weeks.
-          </li>
-          <li>Eliminated all critical accessibility violations across 2 mobile apps by redesigning UI components to
-            <strong>WCAG 2.1 AA</strong> standards, enabling the team to pass their first formal accessibility audit.
-          </li>
-          <li>Drove a <strong>15% uplift in campaign CTR</strong> by designing and A/B testing 12+ social media assets
-            in Adobe Illustrator — winning variant became the brand's standard visual template.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ── PROJECTS ── -->
-    <section>
-      <div class="section-title">Projects</div>
-
-      <div class="project">
-        <div class="project-header">
-          <div class="project-title">PrintHub — Mobile UX Redesign</div>
-          <a class="project-link" href="https://figma.com/community/file/1439181928064589138/redesign-printhub"
-            target="_blank">figma.com/community/file/…/redesign-printhub</a>
-        </div>
-        <div class="project-desc">+25% retention, 30% faster launch. Rebuilt PrintHub's entire mobile experience —
-          onboarding to checkout — using user journey mapping, heuristic evaluation, and a scalable Figma design system.
-        </div>
-        <div class="project-stack"><span>Stack:</span> Figma · Design System · Mobile UX · Usability Testing</div>
-      </div>
-
-      <div class="project">
-        <div class="project-header">
-          <div class="project-title">Teamera.net — Full-Stack Startup Platform</div>
-          <a class="project-link" href="https://teamera.vercel.app" target="_blank">teamera.vercel.app</a>
-        </div>
-        <div class="project-desc">Solo-built end-to-end: React frontend, Node.js/Express API, MongoDB Atlas, real-time
-          Socket.io collaboration, and JWT auth — production-ready, live, and used by real people.</div>
-        <div class="project-stack"><span>Stack:</span> React · Node.js · Express.js · MongoDB Atlas · Socket.io · JWT
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-header">
-          <div class="project-title">Walkeels.com — Brand &amp; Web</div>
-          <a class="project-link" href="https://lnkd.in/d6wAhsFa" target="_blank">lnkd.in/d6wAhsFa</a>
-        </div>
-        <div class="project-desc">Zero to live in 3 weeks. Designed the brand system, wireframed in Figma, built in
-          HTML/Tailwind CSS — client's first professional digital presence.</div>
-        <div class="project-stack"><span>Stack:</span> HTML · Tailwind CSS · Figma · Responsive Design</div>
-      </div>
-    </section>
-
-    <!-- ── SKILLS ── -->
-    <section>
-      <div class="section-title">Skills &amp; Tools</div>
-      <div class="skills-grid">
-        <div>
-          <div class="skill-group-label">Design &amp; UX</div>
-          <div class="skill-list">User Research · Design Thinking · User Journey Mapping · Heuristic Evaluation ·
-            Interaction Design · Usability Testing · A/B Testing · Design Systems · Component Library · Information
-            Architecture · Wireframing · Prototyping · Accessibility (WCAG 2.1) · Responsive Design</div>
-        </div>
-        <div>
-          <div class="skill-group-label">Development</div>
-          <div class="skill-list">React.js · Node.js · Express.js · MongoDB · Socket.io · JavaScript · HTML · Tailwind
-            CSS · GitHub · REST APIs · JWT Authentication</div>
-        </div>
-        <div>
-          <div class="skill-group-label">Tools &amp; Platforms</div>
-          <div class="skill-list">Figma · Figma AI (Make) · Adobe Illustrator · Sketch · Miro · Lovable · Amplitude ·
-            Qualtrics · UserTesting · Stakeholder Communication · Cross-functional Collaboration</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── EDUCATION ── -->
-    <section>
-      <div class="section-title">Education</div>
-      <div class="edu-item">
-        <div>
-          <span class="edu-degree">Bachelor of Computer Applications (BCA)</span>
-          <span class="edu-school">— Tilak Maharashtra Vidyapeeth</span>
-        </div>
-        <div class="edu-date">Expected Jun 2026</div>
-      </div>
-      <div class="edu-item">
-        <div>
-          <span class="edu-degree">HSC — Information Technology</span>
-          <span class="edu-school">— ASM (CSIT) College</span>
-        </div>
-        <div class="edu-date">2022</div>
-      </div>
-    </section>
-
-  </div><!-- /page -->
-
-  <!-- Print Button (hidden on print) -->
-  <div style="text-align:center; padding: 18px; font-family: Inter, sans-serif;">
-    <style>
-      @media print {
-        .print-btn-wrap {
-          display: none !important;
-        }
-      }
-    </style>
-    <div class="print-btn-wrap">
-      <p style="color:#555; font-size:13px; margin-bottom:10px;">✅ ATS-optimized · One-page layout · Print or Save as
-        PDF</p>
-      <button onclick="window.print()" style="
-          background:#1a56db; color:#fff; border:none; border-radius:7px;
-          padding:11px 32px; font-size:14px; font-weight:600; cursor:pointer;
-          font-family:inherit; letter-spacing:0.2px;
-        ">🖨️ Save as PDF / Print</button>
-    </div>
+  <h1>ASHWINKUMAR CHAVAN</h1>
+  <div class="role">UI/UX Designer &amp; Developer</div>
+  <div class="contact">
+    Pune, India &nbsp;&middot;&nbsp; &nbsp;&middot;&nbsp; ashwinchavan39@gmail.com &nbsp;&middot;&nbsp; +91 8180994970 &nbsp;&middot;&nbsp; LinkedIn &nbsp;&middot;&nbsp; Portfolio
   </div>
 
-</body>
+  <h2>Professional Summary</h2>
+  <p class="summary">
+    UI/UX Designer and Developer with hands-on experience shipping mobile and web products from research to release. I bridge design and code to build intuitive, accessible interfaces and scalable design systems. At Newprinthub, my work has lifted customer retention by 25% and helped the team ship 30% faster against sprint estimates.
+  </p>
 
+  <h2>Core Competencies</h2>
+  <div class="skills-line"><span class="label">UX &amp; Research:</span> User Research, Design Thinking, User Journey Mapping, Interaction Design, Usability Testing, A/B Testing, Information Architecture, Accessibility (WCAG), End-to-End Product Design</div>
+  <div class="skills-line"><span class="label">Design Systems:</span> Component Libraries, Figma Design Systems, Design Documentation, Design-to-Engineering Handoff</div>
+  <div class="skills-line"><span class="label">Design Tools:</span> Figma, Sketch, Adobe Illustrator, Magicpath, Miro</div>
+  <div class="skills-line"><span class="label">AI &amp; Prototyping:</span> Lovable, Figma Make, Perplexity, Claude, Antigravity AI IDE</div>
+  <div class="skills-line"><span class="label">Analytics:</span> Amplitude, Qualtrics, UserTesting</div>
+  <div class="skills-line"><span class="label">Development:</span> React.js, JavaScript, HTML, Tailwind CSS, GitHub, Node.js, Express, MongoDB, Socket.io, JWT</div>
+
+  <h2>Professional Experience</h2>
+
+  <div class="job">
+    <div class="row"><span>UI/UX Designer &mdash; Newprinthub.com, Pune</span><span>May 2024 &ndash; Present</span></div>
+    <ul>
+      <li>Redesigned the client onboarding flow using design thinking and usability testing, increasing customer retention by 25%.</li>
+      <li>Streamlined UI components and rebuilt navigation paths, improving app user retention by 20%.</li>
+      <li>Built a scalable Figma component library that removed back-and-forth between design and engineering, helping the team ship 30% faster than sprint estimates.</li>
+      <li>Lead end-to-end design for PrintHub, a mobile-first printing platform serving customers across India.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="row"><span>UI/UX Developer &mdash; Inrowmek.com, Pune</span><span>Oct 2023 &ndash; Apr 2024</span></div>
+    <ul>
+      <li>Authored design documentation and a reusable Figma design system, cutting design-to-development handoff time by 40%.</li>
+      <li>Designed responsive, WCAG-compliant UI components for mobile and web using Sketch and Figma.</li>
+      <li>Built intuitive user interfaces for mobile and web applications from concept through developer hand-off.</li>
+      <li>Created marketing assets including social media graphics and Adobe Illustrator brand illustrations.</li>
+    </ul>
+  </div>
+
+  <h2>Key Projects</h2>
+
+  <div class="project">
+    <div class="row"><span>Teamera.net &mdash; Collaborative Startup Ecosystem</span><span>2025 &ndash; 2026</span></div>
+    <div class="meta">Role: Full-Stack Designer &amp; Developer</div>
+    <ul>
+      <li>Designed and developed a full-stack web app that helps founders, students, and professionals form startup teams, apply for roles, and collaborate in shared workspaces.</li>
+      <li>Architected a 3-tier system using React, Node.js, Express, MongoDB Atlas, JWT authentication, and Socket.io for real-time communication.</li>
+      <li>Shipped a role-based application system with a six-state lifecycle, profile portfolios, project discovery, and team workspaces.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="row"><span>PrintHub &mdash; Mobile Printing Platform</span><span>May 2024 &ndash; Present</span></div>
+    <div class="meta">Role: UI/UX Designer</div>
+    <ul>
+      <li>Redesigned the full customer journey from document upload to delivery tracking, reducing drop-off and improving task completion.</li>
+      <li>Built a modern Figma design system with a Poppins type scale, purple-led palette, and a library of hand-crafted SVG illustrations.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="row"><span>Walkeels.com &mdash; Business Website</span><span>2023</span></div>
+    <div class="meta">Role: UI/UX Designer &amp; Frontend Developer</div>
+    <ul>
+      <li>Designed and developed a responsive one-page business website focused on clarity, lead generation, and brand trust.</li>
+      <li>Delivered a mobile-first experience with a consistent visual system, smooth navigation, and an SEO-friendly structure.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="edu">
+    <div class="row"><span>Bachelor of Computer Applications (BCA)</span><span>Aug 2022 &ndash; Jun 2026</span></div>
+    <div class="meta">Tilak Maharashtra Vidyapeeth &middot; Coursework: Computer Fundamentals, Operating Systems &amp; Networking, Business Application Models, Database Management Systems.</div>
+  </div>
+  <div class="edu">
+    <div class="row"><span>Higher Secondary Certificate &mdash; Information Technology</span><span>Aug 2021 &ndash; Mar 2022</span></div>
+    <div class="meta">ASM (CSIT) College &middot; Coursework: Information Technology, Planning &amp; Organisation Management, Business Models, Enterprise Resource Systems.</div>
+  </div>
+</body>
 </html>

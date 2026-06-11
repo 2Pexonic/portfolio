@@ -14,26 +14,6 @@ import { useNavigation } from './hooks/useNavigation';
 
 export const projects: Project[] = [
   {
-    id: "printhub",
-    title: "PrintHub: Mobile Printing Solution",
-    timeline: "May 2024 - Present",
-    category: "Mobile Application",
-    role: "UI/UX Designer",
-    overview: "PrintHub is a mobile-first printing platform designed to simplify the printing process for customers across India. The application enables users to upload documents, customize print options, place orders, and track deliveries through an intuitive and user-friendly interface.",
-    problem: "PrintHub's existing mobile application suffered from complex user flows, an outdated interface, and high customer drop-off rates. Users found it difficult to navigate the printing process, leading to frustration and lower sales conversions.",
-    solution: "A fully redesigned mobile application built on a scalable Figma component library and design system. Every screen was informed by user journey mapping, and A/B testing of key interactions to ensure measurable usability improvements.",
-    impact: "Significantly improved customer engagement, faster task completion, and established a consistent brand identity across all mobile touchpoints.",
-    bullets: [
-      "Simplified the printing journey from document upload to delivery tracking.",
-      "Established a modern design system using Poppins and a custom color palette.",
-      "Optimized the mobile experience for faster navigation and better accessibility."
-    ],
-    link: "#",
-    figmaLink: "https://www.figma.com/community/file/1439181928064589138/redesign-printhub",
-    thumbnailImage: "/src/assets/Printhub/Printhub.jpg",
-    heroImage: "/src/assets/Printhub/Printhub-Casestudy.png"
-  },
-  {
     id: "teamara",
     title: "Teamera.net: Collaborative Ecosystem",
     timeline: "2025 - 2026",
@@ -87,8 +67,28 @@ export const projects: Project[] = [
     ]
   },
   {
+    id: "printhub",
+    title: "PrintHub: Mobile Printing Solution",
+    timeline: "May 2024 - Present",
+    category: "Mobile Application",
+    role: "UI/UX Designer",
+    overview: "PrintHub is a mobile-first printing platform designed to simplify the printing process for customers across India. The application enables users to upload documents, customize print options, place orders, and track deliveries through an intuitive and user-friendly interface.",
+    problem: "PrintHub's existing mobile application suffered from complex user flows, an outdated interface, and high customer drop-off rates. Users found it difficult to navigate the printing process, leading to frustration and lower sales conversions.",
+    solution: "A fully redesigned mobile application built on a scalable Figma component library and design system. Every screen was informed by user journey mapping, and A/B testing of key interactions to ensure measurable usability improvements.",
+    impact: "Significantly improved customer engagement, faster task completion, and established a consistent brand identity across all mobile touchpoints.",
+    bullets: [
+      "Simplified the printing journey from document upload to delivery tracking.",
+      "Established a modern design system using Poppins and a custom color palette.",
+      "Optimized the mobile experience for faster navigation and better accessibility."
+    ],
+    link: "#",
+    figmaLink: "https://www.figma.com/community/file/1439181928064589138/redesign-printhub",
+    thumbnailImage: "/src/assets/Printhub/Printhub.jpg",
+    heroImage: "/src/assets/Printhub/Printhub-Casestudy.png"
+  },
+  {
     id: "walkeels",
-    title: "Walkeels: Business Ecosystem",
+    title: "Walkeels: Business Website",
     timeline: "2023",
     category: "Web Design & Development",
     role: "UI/UX Designer & Frontend Developer",

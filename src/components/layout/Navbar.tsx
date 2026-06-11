@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { cn } from '../../utils/cn';
 import { Button } from '../ui/Button';
-import resumePdf from '../../assets/UIUX Designer.pdf';
+import resumePdf from '../../assets/Ashwin UI-UX Designer & Developer.pdf';
 import './Navbar.css';
 
 interface NavbarProps {
