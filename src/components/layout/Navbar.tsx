@@ -32,7 +32,7 @@ export const Navbar = ({
     // Download the PDF
     const link = document.createElement('a');
     link.href = resumePdf;
-    link.download = 'UIUX Designer.pdf';
+    link.download = 'Ashwin UI-UX Designer & Developer.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
