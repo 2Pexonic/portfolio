@@ -69,7 +69,7 @@ export const projects: Project[] = [
   {
     id: "printhub",
     title: "PrintHub: Mobile Printing Solution",
-    timeline: "May 2024 - Present",
+    timeline: "2024-2025",
     category: "Mobile Application",
     role: "UI/UX Designer",
     overview: "PrintHub is a mobile-first printing platform designed to simplify the printing process for customers across India. The application enables users to upload documents, customize print options, place orders, and track deliveries through an intuitive and user-friendly interface.",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
   {
     id: "walkeels",
     title: "Walkeels: Business Website",
-    timeline: "2023",
+    timeline: "2023-2024",
     category: "Web Design & Development",
     role: "UI/UX Designer & Frontend Developer",
     overview: "Walkeels is a modern business website designed to establish a strong digital presence through a clean, responsive, and user-focused interface. The project focused on creating an engaging user experience and clear information architecture.",
@@ -136,8 +136,8 @@ function AppContent() {
     >
       <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>
-          <Route 
-            path="/" 
+          <Route
+            path="/"
             element={
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -147,10 +147,10 @@ function AppContent() {
               >
                 <WorksPage projects={projects} />
               </motion.div>
-            } 
+            }
           />
-          <Route 
-            path="/about" 
+          <Route
+            path="/about"
             element={
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -160,10 +160,10 @@ function AppContent() {
               >
                 <AboutPage />
               </motion.div>
-            } 
+            }
           />
-          <Route 
-            path="/project/:id" 
+          <Route
+            path="/project/:id"
             element={
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -173,7 +173,7 @@ function AppContent() {
               >
                 <CaseStudyPage />
               </motion.div>
-            } 
+            }
           />
         </Routes>
       </AnimatePresence>
