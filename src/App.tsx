@@ -97,14 +97,14 @@ export const projects: Project[] = [
     solution: "A modern one-page website designed with intuitive navigation, strategic content placement, and responsive layouts that effectively communicates the brand's services and values.",
     impact: "Improved user experience, stronger brand presentation, faster and more engaging browsing experience, and a professional digital presence aligned with business goals.",
     bullets: [
-      "Developed a high-performance one-page business website with a focus on conversion.",
+      "Developed a high-performance web-page business website with a focus on conversion.",
       "Established a modern visual system with consistent typography, colors, and components.",
       "Implemented mobile-first responsive design ensuring accessibility across all devices."
     ],
-    thumbnailImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
-    heroImage: "https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&q=80&w=2000",
-    link: "https://lnkd.in/d6wAhsFa",
-    figmaLink: "https://lnkd.in/dzhKS6d5"
+    thumbnailImage: "/src/assets/Walkeels/Thumbnail.png",
+    heroImage: "/src/assets/Walkeels/Banner.png",
+    link: "https://ashwin1245.github.io/walkeels/",
+    figmaLink: "https://www.figma.com/community/file/1431637403731775776/walkeels-com"
   }
 ];
 

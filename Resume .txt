@@ -63,7 +63,7 @@ Role: UI/UX Designer | Timeline: May 2024 - Present
 
 Walkeels.com - Business Website
 Role: UI/UX Designer & Frontend Developer | Timeline: 2023
-- Designed and developed a responsive one-page business website focused on clarity, lead generation, and brand trust.
+- Designed and developed a responsive web-page business website focused on clarity, lead generation, and brand trust.
 - Delivered a mobile-first experience with a consistent visual system, smooth navigation, and an SEO-friendly structure.
 
 ------------------------------------------------------------

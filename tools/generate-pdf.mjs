@@ -155,7 +155,7 @@ doc.font('Helvetica-Oblique').fontSize(9);
 doc.text('Role: UI/UX Designer & Frontend Developer', M, doc.y, { width: UW, lineBreak: false });
 doc.y = doc.y + 11.50;
 bullets([
-  'Designed and developed a responsive one-page business website focused on clarity, lead generation, and brand trust.',
+  'Designed and developed a responsive web-page business website focused on clarity, lead generation, and brand trust.',
   'Delivered a mobile-first experience with a consistent visual system, smooth navigation, and an SEO-friendly structure.',
 ], 9.25, 2.0);
 doc.y = doc.y + 2;
